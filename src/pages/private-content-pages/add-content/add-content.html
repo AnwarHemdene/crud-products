@@ -1,0 +1,38 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Ajouter un produit</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>Nom de produit</ion-label>
+    <ion-input type="text" [(ngModel)]="contentItem.itemName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Description</ion-label>
+    <ion-input type="text" [(ngModel)]="contentItem.itemContent"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label floating>Prix en dt</ion-label>
+      <ion-input type="number" [(ngModel)]="contentItem.prix"></ion-input>
+    </ion-item>
+  <ion-item>
+        <ion-label floating>Quantite</ion-label>
+        <ion-input type="number" [(ngModel)]="contentItem.qnt"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label floating>Nature</ion-label>
+      <ion-input type="text" [(ngModel)]="contentItem.nature"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>Points</ion-label>
+        <ion-input type="number" [(ngModel)]="contentItem.pts"></ion-input>
+      </ion-item>
+
+  <button ion-button block (click)="addContentItem(contentItem)">Add Item</button>
+</ion-content>

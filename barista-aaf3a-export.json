@@ -1,0 +1,21 @@
+{
+  "content-list" : {
+    "-LCd4e6MVuIDgRKA0BF6" : {
+      "itemContent" : "prod desc",
+      "itemName" : "po3",
+      "key" : "-LCd4e6MVuIDgRKA0BF6",
+      "nature" : "hot",
+      "prix" : 900,
+      "qnt" : 6
+    },
+    "-LCdBF-pET1Zq08bfseD" : {
+      "itemContent" : "Description du produit 1",
+      "itemName" : "Produit1",
+      "key" : "-LCdBF-pET1Zq08bfseD",
+      "nature" : "Hot Drinks",
+      "prix" : 20,
+      "pts" : 10,
+      "qnt" : 50
+    }
+  }
+}

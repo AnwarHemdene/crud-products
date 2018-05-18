@@ -1,0 +1,33 @@
+
+<ion-header>
+ 
+  <ion-navbar color="primary">
+    <ion-title>Liste des produits</ion-title>
+    <ion-buttons end> 
+      <button ion-button icon-only 
+      (click)="navigateToAddContentPage()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-card>
+  <ion-list>
+    <!-- Repeat the ion-item for as many items that we have inside of our Content list. -->
+    <ion-item *ngFor="let item of items" (click)="selectContentItem(item)">
+        <hr>
+      <h2>Nom de produit: {{item.itemName}}</h2>
+      <h3>Description: {{item.itemContent}}</h3>
+      <h3>Prix: {{item.prix}}</h3>
+      <h3>Quantite: {{item.qnt}}</h3>
+      <h3>Nature: {{item.nature}}</h3>
+      <h3>Points: {{item.pts}}</h3>
+      <hr>
+    </ion-item>
+  </ion-list>
+</ion-card>
+</ion-content>
